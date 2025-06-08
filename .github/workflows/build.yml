@@ -31,7 +31,7 @@ jobs:
           make install
 
       - name: Add polyml to PATH
-        run: echo "$HOME/polyml-install/" >> $GITHUB_PATH
+        run: echo "$HOME/polyml-install/" >> "$GITHUB_PATH"
 
       - name: Verify polyML setup
         run: poly -v
